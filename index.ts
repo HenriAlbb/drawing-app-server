@@ -7,7 +7,7 @@ import { Server } from 'socket.io'
 
 const io = new Server(server, {
     cors: {
-        origin: 'Access-Control-Allow-Origin',
+        origin: 'https://drawing-app-server-1t6bhr6h0-henrialbbs-projects.vercel.app',
     },
 })
 
