@@ -7,7 +7,7 @@ import { Server } from 'socket.io'
 
 const io = new Server(server, {
     cors: {
-        origin: 'https://drawing-app-server-1t6bhr6h0-henrialbbs-projects.vercel.app',
+        origin: "http://localhost:3000",
     },
 })
 
@@ -38,6 +38,6 @@ io.on('connection', (socket) => {
     socket.on('clear', () => io.emit('clear'))
 })
 
-server.listen(3000, () => {
-    console.log('Server listening on port 3000')
+server.listen(3001, () => {
+    console.log('Server listening on port 3001')
 })
