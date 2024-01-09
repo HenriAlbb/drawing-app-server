@@ -38,6 +38,6 @@ io.on('connection', (socket) => {
     socket.on('clear', () => io.emit('clear'))
 })
 
-server.listen(3001, () => {
-    console.log('Server listening on port 3001')
+server.listen(3000, () => {
+    console.log('Server listening on port 3000')
 })
